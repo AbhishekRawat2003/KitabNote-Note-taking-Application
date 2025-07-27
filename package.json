@@ -1,0 +1,17 @@
+{
+  "name": "collabnote",
+  "displayName": "CollabNote",
+  "version": "1.0.0",
+  "description": "A note-taking app that allows you to take notes together with your friends, family, and colleagues.",
+  "scripts": {
+    "dev": "cd frontend && vite && cd ../backend && npm run start:dev",
+    "start": "cd frontend && vite && cd ../backend && npm run start:dev",
+    "frontend": "cd frontend && vite",
+    "backend": "cd backend && npm run start:dev",
+    "format": "prettier --write \"**/*.{js,ts,tsx,json,css,html}\""
+  },
+  "private": false,
+  "dependencies": {
+    "prettier": "^3.4.2"
+  }
+}

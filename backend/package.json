@@ -1,0 +1,60 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "Backend for CollabNote App",
+  "main": "dist/main.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/main.js",
+    "start:dev": "nodemon --watch src --exec ts-node src/main.ts",
+    "test": "npm run start:dev"
+  },
+  "keywords": [
+    "nestjs",
+    "supabase",
+    "jwt",
+    "passport",
+    "notes",
+    "collabnote",
+    "backend"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hoangsonww/CollabNote-Fullstack-App.git"
+  },
+  "bugs": {
+    "url": "https://github.com/hoangsonww/CollabNote-Fullstack-App/issues"
+  },
+  "author": "Son Nguyen",
+  "license": "MIT",
+  "dependencies": {
+    "@nestjs/apollo": "^13.0.2",
+    "@nestjs/common": "^11.0.4",
+    "@nestjs/config": "^4.0.0",
+    "@nestjs/core": "^11.0.4",
+    "@nestjs/graphql": "^13.0.2",
+    "@nestjs/jwt": "^11.0.0",
+    "@nestjs/passport": "^11.0.4",
+    "@nestjs/platform-express": "^11.0.5",
+    "@nestjs/swagger": "^11.0.3",
+    "@supabase/supabase-js": "^2.48.0",
+    "apollo-server-express": "^3.13.0",
+    "bcrypt": "^5.1.1",
+    "graphql": "^16.10.0",
+    "passport": "^0.7.0",
+    "passport-jwt": "^4.0.1",
+    "reflect-metadata": "^0.2.2",
+    "rxjs": "^7.8.1",
+    "swagger-ui-dist": "^5.18.2",
+    "swagger-ui-express": "^5.0.1"
+  },
+  "devDependencies": {
+    "@types/bcrypt": "^5.0.2",
+    "@types/node": "^22.10.7",
+    "@types/passport-jwt": "^4.0.1",
+    "@types/swagger-ui-express": "^4.1.7",
+    "nodemon": "^3.1.9",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.7.3"
+  }
+}
